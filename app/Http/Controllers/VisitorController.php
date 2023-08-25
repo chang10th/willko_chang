@@ -9,6 +9,8 @@ class VisitorController extends Controller
 {
     public function index()
     {
+        // On retourne la vue visitor.index avec les données de tous users ayant le role "Visitor" stockée dans la variable nommée 
+        // "visitors" qui pourra être réutiliser dans la vue.
         return view('visitor.index',['visitors'=>User::join('roles', 'roles.id', '=', 'users.role_id')->where('roles.roleName', "Visitor")->get()]);
     }
 
@@ -32,7 +34,13 @@ class VisitorController extends Controller
         // Pour supprimer un visiteur
     }
 
-    public function storeVisit(Request $request)
+    public function createVisitor()
+    {
+        // Page formulaire permettant de créer un nouveau visiteur
+        return view('visitor.createVisitor')
+    }
+
+    public function storeVisitor(Request $request)
     {
         // permet de créer un visiteur dans la bdd
     }

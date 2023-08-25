@@ -11,7 +11,12 @@
         <div class="col-12">
             <div class="card">
                 <div class="card-body">
-                    <h3>Liste des visiteurs</h3>
+                    <h3>
+                        Liste des visiteurs
+                        <a class="btn btn-default btn-xs" href="{{route('visitor.createVisitor')}}">
+                            <i class="fa fa-plus"></i>
+                        </a>
+                    </h3>
                     <br/>
                     <table class="table table-bordered table-striped datatable">
                         <thead>
