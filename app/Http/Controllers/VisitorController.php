@@ -37,7 +37,7 @@ class VisitorController extends Controller
     public function createVisitor()
     {
         // Page formulaire permettant de créer un nouveau visiteur
-        return view('visitor.createVisitor')
+        return view('visitor.createVisitor');
     }
 
     public function storeVisitor(Request $request)
