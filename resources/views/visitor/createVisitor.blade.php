@@ -11,12 +11,12 @@
         <div class="col-12">
             <form method="POST" action="{{route('visitor.storeVisitor')}}">
                 @csrf
-                <input type="hidden" name="role_id" value=""/>
+                <input type="hidden" name="role_id" value="2"/>
                 <div class="card card-primary card-outline">
                     <div class="card-body">
                         <div class="form-group">
                             <label for="name">Nom</label>
-                            <input type="text" class="form-control" name="lastname">
+                            <input type="text" required class="form-control" name="lastname">
                         </div>
                         <div class="form-group">
                             <label for="name">Prénom</label>

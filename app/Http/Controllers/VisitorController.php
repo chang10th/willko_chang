@@ -43,5 +43,16 @@ class VisitorController extends Controller
     public function storeVisitor(Request $request)
     {
         // permet de créer un visiteur dans la bdd
+        $data = [
+            'lastname'=>$request->lastname,
+            'firstname'=>$request->firstname,
+            'role_id'=>(int)$request->role_id,
+            'email'=>$request->email,
+            'password'=>$request->password,
+        ];
+
+        User::factory()->create($data);
+
+        return redirect(route('visitor.index'));
     }
 }

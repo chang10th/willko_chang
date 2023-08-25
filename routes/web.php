@@ -22,3 +22,4 @@ Auth::routes();
 Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name('home');
 Route::get('/visitor',[\App\Http\Controllers\VisitorController::class, 'index'])->name('visitor.index');
 Route::get('/visitor/createVisitor',[\App\Http\Controllers\VisitorController::class, 'createVisitor'])->name('visitor.createVisitor');
+Route::post('/visit/storeVisitor',[\App\Http\Controllers\VisitorController::class, 'storeVisitor'])->name('visitor.storeVisitor');
