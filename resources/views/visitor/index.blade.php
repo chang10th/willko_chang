@@ -11,7 +11,7 @@
         <div class="col-12">
             <div class="card">
                 <div class="card-body">
-                    <h3>Portefeuille de praticiens </h3>
+                    <h3>Liste des visiteurs</h3>
                     <br/>
                     <table class="table table-bordered table-striped datatable">
                         <thead>
