@@ -11,6 +11,7 @@ return new class extends Migration
      */
     public function up(): void
     {
+        //Table qui permet de définir les rôles des utilisateurs (Admin/Visiteurs/Hôtes)
         Schema::create('roles', function (Blueprint $table) {
             $table->id();
             $table->string('roleName');
